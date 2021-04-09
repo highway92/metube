@@ -6,6 +6,20 @@
   "author": "highway92",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node init.js --delay 2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
