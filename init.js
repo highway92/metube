@@ -7,7 +7,7 @@ import "./models/User";
 
 dotenv.config();
 
-const PORT = process.env.PORT;
+const { PORT } = process.env;
 const handleListening = () =>
   console.log(`👌 Listening:http://localhost:${PORT}`);
 
