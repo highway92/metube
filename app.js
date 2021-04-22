@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import apiRouter from "./routers/apiRouter";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import passport from "passport";
@@ -48,5 +49,6 @@ app.use(localsMiddleware);
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
 app.use(routes.videos, videoRouter);
+app.use(routes.api, apiRouter);
 
 export default app;
